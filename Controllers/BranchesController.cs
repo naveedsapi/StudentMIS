@@ -8,5 +8,10 @@ namespace StudentMIS.Controllers
         {
             return View();
         }
+        public IActionResult ViewBranch()
+        {
+            return View();
+        }
+
     }
 }
