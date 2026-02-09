@@ -1,1 +1,1 @@
-# StudentMIS
+# this is simple website
