@@ -1,0 +1,46 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+
+<p>Use this page to detail your site's privacy policy.</p>
+
+
+
+
+<div class="text-end my-2">  
+   <a  class="btn btn-primary" asp-action="Create" asp-controller="Branches" > Create Branches </a>
+</div>
+
+
+  <div class="row row-cols-3 g-4">
+    @for (int i = 1; i <= 6; i++)
+    {
+        <div class="col">
+            <div class="card h-100 border-0 shadow-lg rounded-1">
+                <img src="kdfjsdlkfjjlk"
+                  class="card-img-top"
+                  alt="post.title"
+                  style="height:300px;object-fit:cover" />
+
+               
+
+                  <div class="card-body "> 
+                      <h5 class="card-title">Post.title</h5>
+                      <p class="text-muted mb-2"> Publish on Post.publishedDate.tostring("MMM dd,yyyyy") </p>
+                      <span class="badge bg-secondary"> Post.category?.name </span>
+                      </div>
+
+                      <div class="card-footer d-flex  justify-content-between align-items-center ">
+                          <a class="btn btn-primary btn-sm"> Read More</a>
+                          <div  class="text-end">  
+                              <div class="text-muted"> By Auther </div>
+                              </div>
+
+                      </div> 
+                </div>
+            </div>
+    }
+</div>
+
+   
